@@ -3,23 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jofoto < jofoto@student.hive.fi >          +#+  +:+       +#+        */
+/*   By: jofoto <jofoto@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 14:31:07 by jofoto            #+#    #+#             */
-/*   Updated: 2023/02/13 16:39:06 by jofoto           ###   ########.fr       */
+/*   Updated: 2023/02/26 14:08:54 by jofoto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct  s_stacks
 {
     int *a;
-    int a_size;
+    int a_curr;
+    int a_cap;
     int *b;
-    int b_size;
+    int b_curr;
+//    int b_cap;
 }               t_v_stacks;
 
 /*INSTRUCTIONS*/
@@ -40,3 +43,5 @@ void lower_stack(int  *stack, int stack_size);
 void swap_top(int *stack);
 /*ALGORITHM*/
 void    start_solving(t_v_stacks *stacks);
+/*init*/
+void    init_stacks(t_v_stacks *stacks, int argc, char **argv);

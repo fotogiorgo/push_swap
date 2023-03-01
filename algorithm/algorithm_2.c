@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   algorithm_2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jofoto <jofoto@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/26 13:03:53 by jofoto            #+#    #+#             */
-/*   Updated: 2023/02/26 23:21:19 by jofoto           ###   ########.fr       */
+/*   Created: 2023/02/27 14:22:47 by jofoto            #+#    #+#             */
+/*   Updated: 2023/02/27 14:52:17 by jofoto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include <stdio.h>
-
-int main(int argc, char **argv)
+void    recurse(char **istr, int curr, int max)
 {
-    t_v_stacks  *stacks;
-
-    stacks = (t_v_stacks *)malloc(sizeof(t_v_stacks));
-    if (stacks == NULL)
-        exit(1);
+    int i;
     
-    init_stacks(stacks, argc, argv);
-    start_solving(stacks);
-    //printf("stacks.a_curr: %i\n", stacks->a_cap);
-    //for (int i = 0; i < stacks->a_curr; i++)
-    //    printf("%i\n", stacks->a[i]);
+    i = 0;
+    while(i < 11)
+    {
+        
+    }
 }
